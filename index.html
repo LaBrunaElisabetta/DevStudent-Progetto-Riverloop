@@ -8,7 +8,95 @@
 </head>
 <body>
 
-    
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container-header__inner">
+        <a class="logo" href="#home"
+          ><span class="logo--dev">Dev</span
+          ><span class="logo--accent">Student</span></a
+        >
+
+        <button
+          class="menu-button"
+          id="menu-button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Apri/Chiudi menu</span>
+          <span aria-hidden="true" class="menu-icon"></span>
+        </button>
+
+        <!--  NAVBAR -->
+        <nav id="primary-nav" class="nav" aria-label="Navigazione principale">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contatti">Contacts</a></li>
+          </ul>
+        </nav>
+        <!--  FINE NAVBAR -->
+      </div>
+    </header>
+
+    <!-- FINE HEADER -->
+
+    <!-- MAIN -->
+    <main id="main-content">
+      <!-- SEZIONE HERO (HOME) -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <img
+            id="fotoDeveloper"
+            class="fotoDeveloper"
+            src="Foto Esercitazione.jpg"
+            alt="foto-developer"
+          />
+          <div class="hero-text">
+            <h1 id="hero-title">Maria Elisabetta Francesca La Bruna</h1>
+            <p>Full-stack Developer</p>
+            
+             <!-- CTA -->
+          <a class="btn btn--primary hero-cta" href="#projects">Guarda i progetti</a>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINE HERO -->
+
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-labelledby="title-about">
+        <div class="container">
+          <h2 id="about--title">About me</h2>
+
+          <div class="about-content">
+            <p>
+              Maria Elisabetta Francesca La Bruna, Full-stack Developer,
+              dimestichezza base con HTML - CSS - JS, conoscenze di GitHub.
+            </p>
+            <p>
+              Conoscenza avanzata della lingua inglese, conoscenza intermedia della lingua francesce e base della lingua giapponese.
+            </p>
+            <p>
+              Ho fatto due prove lavorative: 
+              <ul>
+                <li>
+                  Prova lavorativa presso azienda informatica (Angular e grafica stampe in Php)
+                </li>
+                   <li>
+                 Prova lavorativa e formativa di base presso azienda (Senza codice Bubble.io)
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINE ABOUT -->
+
+    </main>
+
 
     <!-- SCRIPT JS -->
     <script src="app.js"></script>
