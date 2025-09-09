@@ -78,6 +78,17 @@ select:focus {
   padding: 0.6rem;
 }
 
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-radius: var(--radius);
+}
+
+
 /* CONTENITORI E SEZIONI */
 
 .container {
@@ -324,4 +335,48 @@ a {
 
 .about-content ul li {
   font-size: var(--fs-lg);
+}
+
+/* PROJECTS */
+#projects {
+  background-color: #fff;
+  padding-block: var(--space-3);
+}
+
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+/* STILE CARD */
+.card {
+  background-color: rgba(219, 255, 238, 0.227);
+  border-radius: var(--radius);
+  border: solid 1px;
+  border-color: var(--brand);
+  padding: var(--space-2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-1);
+}
+
+
+.card a {
+  display: inline-block;
+  margin-top: var(--space-1);
+  font-weight: 600;
+  color: var(--brand);
+  text-decoration: underline;
 }
