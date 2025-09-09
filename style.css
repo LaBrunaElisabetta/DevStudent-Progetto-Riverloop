@@ -314,8 +314,10 @@ a {
 /* ABOUT */
 
 #about {
+  display: grid;
+  align-items: center;
   background-color: #e8fff1;
-  height: 50vh;
+  height: 60vh;
 }
 
 .about-content p {
