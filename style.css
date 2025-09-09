@@ -277,7 +277,7 @@ a {
 }
 
 .hero .container p {
-  font-size: var(--fs-xl);
+  font-size: var(--fs);
   font-weight: 600;
 }
 
@@ -327,8 +327,8 @@ a {
 #about {
   display: grid;
   align-items: center;
-  background-color: #e8fff1;
-  height: 50vh;
+  background-image: linear-gradient(to bottom right, #e8fff1, #23db98);
+  height: 60vh;
 }
 
 .about-content p {
