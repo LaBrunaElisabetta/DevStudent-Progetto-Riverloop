@@ -328,7 +328,7 @@ a {
   display: grid;
   align-items: center;
   background-color: #e8fff1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .about-content p {
@@ -343,7 +343,7 @@ a {
 #projects {
   background-color: #fff;
   padding-block: var(--space-3);
-  min-height: 60vh;
+  height: 70vh;
 }
 
 
