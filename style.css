@@ -277,7 +277,7 @@ a {
 }
 
 .hero .container p {
-  font-size: var(--fs-xl);
+  font-size: var(--fs);
   font-weight: 600;
 }
 
@@ -327,8 +327,8 @@ a {
 #about {
   display: grid;
   align-items: center;
-  background-color: #e8fff1;
-  height: 50vh;
+  background-image: linear-gradient(to bottom right, #e8fff1, #23db98);
+  height: 60vh;
 }
 
 .about-content p {
@@ -383,4 +383,75 @@ a {
   font-weight: 600;
   color: var(--brand);
   text-decoration: underline;
+}
+
+/* CONTATTI */ 
+
+#contatti {
+  display: grid;
+  place-items: center; /* centra orizzontalmente e verticalmente */
+  background: linear-gradient(to bottom right, #14532d, #23db98);
+  color: #fff;
+  padding-block: var(--space-4);
+  height: 100vh;
+}
+
+/* FORM */
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.form__row {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* INPUT E TEXTAREA */
+.form input,
+.form textarea {
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: none;
+  font-size: var(--fs-base);
+  background-color: #fff;
+  color: var(--fg);
+}
+
+
+.form label {
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.form button {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+  background-color: #198754;
+}
+
+
+.text-muted {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  text-align: center;
 }
