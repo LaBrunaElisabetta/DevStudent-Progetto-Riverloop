@@ -389,7 +389,7 @@ a {
 
 #contatti {
   display: grid;
-  place-items: center; /* centra orizzontalmente e verticalmente */
+  place-items: center;
   background: linear-gradient(to bottom right, #14532d, #23db98);
   color: #fff;
   padding-block: var(--space-4);
@@ -404,7 +404,7 @@ a {
   max-width: 600px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: var(--space-3);
+  padding: var(--space-1);
   border-radius: var(--radius);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -454,4 +454,14 @@ a {
   font-size: 0.9rem;
   color: #e0e0e0;
   text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background: #0b1220;
+  color: #e5e7eb;
+  text-align: center;
+  font-size: var(--fs-sm);
+  padding-block: var(--space-2);
+  margin-top: var(--space-4);
 }
