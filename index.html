@@ -137,6 +137,58 @@
       </section>
 
       <!-- FINE PROGETTI -->
+
+      <!-- CONTATTI -->
+      <section id="contatti" class="section" aria-labelledby="tit-contatti">
+        <div class="container">
+          <h2 id="title-contatti">Contatti</h2>
+
+          <form class="form" aria-describedby="form-help">
+            <div class="form__row">
+              <label for="nome">Nome</label>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                placeholder="Il tuo nome"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="nome@email.it"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="msg">Messaggio</label>
+              <textarea
+                id="msg"
+                name="msg"
+                rows="4"
+                placeholder="Scrivi qui il tuo messaggio"
+                autocomplete="off"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Invia</button>
+
+            <p id="form-help" class="text-muted">
+              I campi Nome ed Email sono obbligatori.
+            </p>
+          </form>
+        </div>
+
+      </section>
+
     </main>
 
     <!-- SCRIPT JS -->
